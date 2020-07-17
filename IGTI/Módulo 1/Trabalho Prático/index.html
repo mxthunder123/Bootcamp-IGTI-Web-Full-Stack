@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" class="css" />
+    <title>trabalho pratico 01</title>
+  </head>
+  <body>
+    <style>
+      .color1 {
+        -webkit-appearance: none;
+        width: 90%;
+        margin: 5%;
+        height: 8px;
+        background: #d3d3d3;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+      .color1::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer;
+      }
+      .color1::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: red;
+        cursor: pointer;
+      }
+      .color2 {
+        -webkit-appearance: none;
+        width: 90%;
+        margin: 5%;
+        height: 8px;
+        background: #d3d3d3;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+      .color2::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: green;
+        cursor: pointer;
+      }
+      .color2::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: green;
+        cursor: pointer;
+      }
+      .color3 {
+        -webkit-appearance: none;
+        width: 90%;
+        margin: 5%;
+        height: 8px;
+        background: #d3d3d3;
+        outline: none;
+        -webkit-transition: 0.2s;
+        transition: opacity 0.2s;
+      }
+      .color3::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: blue;
+        cursor: pointer;
+      }
+      .color2::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: blue;
+        cursor: pointer;
+      }
+
+      .botao {
+        width: 450px;
+        height: 50px;
+        margin-left: 34rem;
+        margin-top: 4rem;
+      }
+      .table {
+        margin-left: 33rem;
+        text-align: center;
+      }
+      .title1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: larger;
+      }
+      .subTitle {
+        text-align: justify;
+        margin-bottom: 2rem;
+      }
+    </style>
+    <h1 class="title1">Change colors-Project RGB</h1>
+    <h2 class="subTitle"><span id="name"></span></h2>
+
+    <table id="dados" class="table">
+      <tr></tr>
+      <tr>
+        <td>(R) Red:</td>
+        <td>(G) Green:</td>
+        <td>(B) Blue:</td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="range"
+            id="rangeRed"
+            value="0"
+            min="0"
+            max="255"
+            class="color1"
+            step="1"
+          />
+        </td>
+        <td>
+          <input
+            type="range"
+            id="rangeGreen"
+            value="0"
+            min="0"
+            max="255"
+            class="color2"
+            step="1"
+          />
+        </td>
+        <td>
+          <input
+            type="range"
+            id="rangeBlue"
+            value="0"
+            min="0"
+            max="255"
+            class="color3"
+            step="1"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" id="numberr" class="numberRed" value='0' min='0'
+          max='255' disabled readonly
+        </td>
+        <td>
+          <input type="text" id="numberg" class="numberGreen" value='0' min='0'
+          max='255' readonly disabled
+        </td>
+        <td>
+          <input type="text" id="numberb" class="numberBlue" value='0' min='0'
+          max='255' readonly disabled
+        </td>
+      </tr>
+    </table>
+    <button class="botao"></button>
+
+    <script>
+      window.addEventListener('load', start);
+      function start() {
+        document.querySelector('#dados').addEventListener('input', changeColor);
+      }
+
+      function changeColor(event) {
+        let botao = document.querySelector('.botao');
+        let red = document.querySelector('#rangeRed');
+        let green = document.querySelector('#rangeGreen');
+        let blue = document.querySelector('#rangeBlue');
+        let numr = document.querySelector('#numberr');
+        let numg = document.querySelector('#numberg');
+        let numb = document.querySelector('#numberb');
+
+        numr.value = red.value;
+        numg.value = green.value;
+        numb.value = blue.value;
+
+        let color =
+          'rgb(' + numr.value + ',' + numg.value + ',' + numb.value + ')';
+        botao.style.background = color;
+      }
+    </script>
+  </body>
+</html>
