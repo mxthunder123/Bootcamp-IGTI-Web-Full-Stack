@@ -11,12 +11,15 @@
       .color1 {
         -webkit-appearance: none;
         width: 90%;
-        margin: 5%;
-        height: 8px;
+        width:25rem;
+        margin:5%;
+        margin-right: 35px;
+        height: 10px;
         background: #d3d3d3;
         outline: none;
         -webkit-transition: 0.2s;
         transition: opacity 0.2s;
+        
       }
       .color1::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -88,38 +91,77 @@
       }
 
       .botao {
-        width: 450px;
+        width: 650px;
         height: 50px;
-        margin-left: 34rem;
-        margin-top: 4rem;
+        border-radius: 10px;
+        margin-left: 7rem;
+        
       }
       .table {
-        margin-left: 33rem;
+        
         text-align: center;
+        background-color: rgb(110, 192, 172);
+        
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       }
       .title1 {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: justify;
         font-weight: bold;
         color: black;
         font-size: larger;
+        margin-left: rem;
+        margin-bottom: 2rem;
       }
       .subTitle {
         text-align: justify;
         margin-bottom: 2rem;
-      }
-    </style>
-    <h1 class="title1">Change colors-Project RGB</h1>
-    <h2 class="subTitle"><span id="name"></span></h2>
+        border: 10px;
 
+      }
+      .numberRed{
+        border-radius: 5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .numberGreen{
+        border-radius: 5rem;
+        margin-bottom: 2rem;
+
+      }
+      .numberBlue{
+        border-radius: 5rem;
+        margin-bottom: 2rem;
+
+      }
+      .titulo1{
+        text-align: center;
+      }
+      .div{
+        background-color: rgb(110, 192, 172);
+        width:868px
+      }
+      
+    </style>
     <table id="dados" class="table">
-      <tr></tr>
       <tr>
-        <td>(R) Red:</td>
-        <td>(G) Green:</td>
-        <td>(B) Blue:</td>
+        <td>
+          <h1 class="title1">Color Simulator</h1>
+
+        </td>
       </tr>
       <tr>
+        <td><h2 class="subTitle"><span id="name"> Select the RGB range to
+              generate a
+              color:</span></h2></td>
+      </tr>
+      <tr>
+        <th id="titulo1">Color</th>
+        <th id="titulo2">Range</th>
+        <th id="titulo3">Value</th>
+      </tr>
+      <tr>
+        <td>(R) Red</td>
         <td>
           <input
             type="range"
@@ -129,8 +171,15 @@
             max="255"
             class="color1"
             step="1"
-          />
+            />
         </td>
+        <td><input type="text" id="numberr" class="numberRed" value='0' min='0'
+            max='255' disabled readonly
+        </td>
+      </tr>
+      <tr>
+
+        <td>(G) Green</td>
         <td>
           <input
             type="range"
@@ -140,8 +189,17 @@
             max="255"
             class="color2"
             step="1"
-          />
+            />
         </td>
+        <td>
+          <input type="text" id="numberg" class="numberGreen" value='0' min='0'
+            max='255' readonly disabled
+        </td>
+
+      </tr>
+      <tr>
+        <td>(B) Blue</td>
+
         <td>
           <input
             type="range"
@@ -151,27 +209,16 @@
             max="255"
             class="color3"
             step="1"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="text" id="numberr" class="numberRed" value='0' min='0'
-          max='255' disabled readonly
-        </td>
-        <td>
-          <input type="text" id="numberg" class="numberGreen" value='0' min='0'
-          max='255' readonly disabled
+            />
         </td>
         <td>
           <input type="text" id="numberb" class="numberBlue" value='0' min='0'
-          max='255' readonly disabled
+            max='255' readonly disabled
         </td>
-      </tr>
-    </table>
-    <button class="botao"></button>
-
-    <script>
+        <tr>
+        </table>
+        <div class="div"><button class="botao"></button></div>
+        <script>
       window.addEventListener('load', start);
       function start() {
         document.querySelector('#dados').addEventListener('input', changeColor);
@@ -195,5 +242,5 @@
         botao.style.background = color;
       }
     </script>
-  </body>
-</html>
+      </body>
+    </html>
