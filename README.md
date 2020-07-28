@@ -2,18 +2,18 @@
 
 ## 🔖 Descrição:
 
-#### Neste repositório estarei colocando os trabalhos e desafios implementados durante o bootcamp.
+ #### Neste repositório estarei colocando os trabalhos e desafios implementados durante o bootcamp.
 
-## Módulo 1:
+  ## Módulo 1:
 
-## 💡 Trabalho prático cores RGB:
- #### Foi criado uma aplicação que modifica a cor de um background a partir de diferentes ranges utilizando a função RGB.
-## 💻 Tecnologias estudadas:
- #### -JavaScript;
+  ### 💡 Trabalho prático cores RGB:
+  #### Foi criado uma aplicação que modifica a cor de um background a partir de diferentes ranges utilizando a função RGB.
+   ### 💻 Tecnologias estudadas:
+   #### -JavaScript;
  
- #### -CSS;
+   #### -CSS;
  
- #### -HTML;
+   #### -HTML;
  
 
 ##  🖼 Layout:
