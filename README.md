@@ -14,7 +14,5 @@
    #### -HTML;
    
    #### link da aplicação: https://bootcamp-igti-web-full-stack.vercel.app/Trabalho%20Pr%C3%A1tico%3A%20cores%20RGB
- 
-
-##  🖼 Layout:
+   
  ![127 0 0 1_5500_](https://user-images.githubusercontent.com/62624302/88134551-4b3f8b80-cbbb-11ea-8268-4139fa8205ad.png)
