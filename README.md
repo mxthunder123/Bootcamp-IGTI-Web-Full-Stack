@@ -1,10 +1,8 @@
-# Bootcamp IGTI Web Full Stack
+# Color RGB
 
 ## 🔖 Descrição:
 
- #### Neste repositório estarei colocando os trabalhos e desafios implementados durante o bootcamp.
-
-  ## Módulo 1:
+ #### Neste repositório estarei colocando o trabalho prático do primeiro módulo do bootcamp IGTI Web Full Stack.
 
   ### 💡 Trabalho prático cores RGB:
   #### Foi criado uma aplicação que modifica a cor de um background a partir de diferentes ranges utilizando a função RGB.
@@ -14,6 +12,8 @@
    #### -CSS;
  
    #### -HTML;
+   
+   #### link da aplicação: https://bootcamp-igti-web-full-stack.vercel.app/Trabalho%20Pr%C3%A1tico%3A%20cores%20RGB
  
 
 ##  🖼 Layout:
