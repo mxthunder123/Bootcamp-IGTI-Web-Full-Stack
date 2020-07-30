@@ -2,7 +2,7 @@
 
 ## 🔖 Descrição:
 
- #### Neste repositório estarei colocando os trabalho práticos e desafios realizados  durante o bootcamp IGTI Web Full Stack.
+ #### Neste repositório estarei colocando os trabalhos práticos e desafios realizados  durante o bootcamp IGTI Web Full Stack.
  
  ### Módulo 1:
   ### 💡 Trabalho prático cores RGB:
@@ -14,6 +14,8 @@
  
    #### -HTML;
    
-   #### link da aplicação: https://bootcamp-igti-web-full-stack.vercel.app/Modulo%201/Trabalho%20Pr%C3%A1tico%3A%20cores%20RGB
+   #### link da aplicação: https://bit.ly/Colors_RGB
+   
+   ### 🖼 Layout:
    
  ![127 0 0 1_5500_](https://user-images.githubusercontent.com/62624302/88134551-4b3f8b80-cbbb-11ea-8268-4139fa8205ad.png)
