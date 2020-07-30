@@ -1,8 +1,8 @@
-# Color RGB
+# Bootcamp Web Full Stack
 
 ## 🔖 Descrição:
 
- #### Neste repositório estarei colocando os trabalhos práticos e desafios realizados  durante o bootcamp IGTI Web Full Stack.
+ #### Neste repositório estarei colocando os trabalhos práticos e desafios realizados  durante o Bootcamp IGTI Web Full Stack.
  
  ### Módulo 1:
   ### 💡 Trabalho prático cores RGB:
